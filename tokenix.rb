@@ -5,21 +5,21 @@
 class Tokenix < Formula
   desc "CLI tool for multi-model token count estimation"
   homepage "https://github.com/hasirciogluhq/tokenix"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.0.0/tokenix_1.0.0_darwin_amd64.tar.gz"
-      sha256 "3e90d98d15f1b498e6f7d2ea85389261aebe708385881f75bc92b8d0644f874a"
+      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.1.0/tokenix_1.1.0_darwin_amd64.tar.gz"
+      sha256 "652dbebc02629b27f994e85cf37be420b0ded0c4e2336cfba421a7620488cf55"
 
       define_method(:install) do
         bin.install "tokenix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.0.0/tokenix_1.0.0_darwin_arm64.tar.gz"
-      sha256 "78c2e9cf46f2ab739cbfe945a8c8da48c85a380a1e8d0f4f79ca65b67e9943fe"
+      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.1.0/tokenix_1.1.0_darwin_arm64.tar.gz"
+      sha256 "9da02c7bb0acd3fc5d3c70fec09fd6d65e66a6859694aea41692f86d0d01e2d7"
 
       define_method(:install) do
         bin.install "tokenix"
@@ -29,15 +29,15 @@ class Tokenix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.0.0/tokenix_1.0.0_linux_amd64.tar.gz"
-      sha256 "da1aa27bf6b19360644412bae18d6fd0ec5512ccf3dc185add27aa8fdad2d5cd"
+      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.1.0/tokenix_1.1.0_linux_amd64.tar.gz"
+      sha256 "b5f252310c0c47a2d37fa1111968b544531aea6878e6c737a71135ae23a4d4f2"
       define_method(:install) do
         bin.install "tokenix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.0.0/tokenix_1.0.0_linux_arm64.tar.gz"
-      sha256 "676d2602a3f3470d0ce0e4757fc0d34d005db69a9920766856f6fab240df6db5"
+      url "https://github.com/hasirciogluhq/tokenix/releases/download/v1.1.0/tokenix_1.1.0_linux_arm64.tar.gz"
+      sha256 "4cdd18c9668f3f31afa4ea873c0b7e47ce5bde038601c24e712a31de6c7557bc"
       define_method(:install) do
         bin.install "tokenix"
       end
